@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xacro:macro name="lidar_sensor" parent_link="${parent_link}">
+  <link name="sllidar_base_link">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.2" />
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002" />
+    </inertial>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="${parent_link}" />
+    <child link="sllidar_base_link" />
+    <origin xyz="1.0 0 0.2" rpy="0 0 0" />
+  </joint>
+
+  <gazebo>
+    <plugin name="lidar_plugin" filename="libgazebo_ros_ray_sensor.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>scan:=/scan</remapping>
+      </ros>
+      <topicName>/scan</topicName>
+      <linkName>sllidar_base_link</linkName>
+      <minAngle>-1.5708</minAngle>
+      <maxAngle>1.5708</maxAngle>
+      <updateRate>10.0</updateRate>
+    </plugin>
+  </gazebo>
+</xacro:macro>
+
