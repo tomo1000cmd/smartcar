@@ -1,0 +1,1 @@
+/home/emmanuel/smartcar/build/smartcar_msgs/rosidl_generator_cpp/smartcar_msgs/msg/detail/status__traits.hpp

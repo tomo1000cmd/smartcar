@@ -1,0 +1,1 @@
+/home/emmanuel/smartcar/build/smartcar_msgs/rosidl_typesupport_fastrtps_c/smartcar_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h

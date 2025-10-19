@@ -1,0 +1,7 @@
+{
+  "package_name": "ackermann_msgs",
+  "non_idl_tuples": [
+    "/home/emmanuel/smartcar/src/ackermann_msgs:msg/AckermannDrive.msg",
+    "/home/emmanuel/smartcar/src/ackermann_msgs:msg/AckermannDriveStamped.msg"
+  ]
+}

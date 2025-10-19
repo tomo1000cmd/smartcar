@@ -1,0 +1,4 @@
+source;share/smartcar/local_setup.bash
+source;share/smartcar/local_setup.dsv
+source;share/smartcar/local_setup.sh
+source;share/smartcar/local_setup.zsh

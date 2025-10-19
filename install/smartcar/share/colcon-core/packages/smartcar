@@ -1,0 +1,1 @@
+ackermann_msgs:foxglove_bridge:geometry_msgs:joint_state_publisher:nav2_amcl:nav2_bringup:nav2_bt_navigator:nav2_controller:nav2_lifecycle_manager:nav2_map_server:nav2_planner:nav2_recoveries:nav_msgs:rclcpp:rclpy:robot_state_publisher:sensor_msgs:smartcar_msgs:std_msgs:teleop_twist_keyboard:tf2:tf2_ros:urdf:xacro

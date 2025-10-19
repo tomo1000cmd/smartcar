@@ -1,0 +1,1305 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (ackermann_msgs) JobQueued: {'identifier': 'ackermann_msgs', 'dependencies': OrderedDict()}
+[0.000318] (smartcar_msgs) JobQueued: {'identifier': 'smartcar_msgs', 'dependencies': OrderedDict()}
+[0.000360] (smartcar) JobQueued: {'identifier': 'smartcar', 'dependencies': OrderedDict([('ackermann_msgs', '/home/emmanuel/smartcar/install/ackermann_msgs'), ('smartcar_msgs', '/home/emmanuel/smartcar/install/smartcar_msgs')])}
+[0.000406] (ackermann_msgs) JobStarted: {'identifier': 'ackermann_msgs'}
+[0.022463] (smartcar_msgs) JobStarted: {'identifier': 'smartcar_msgs'}
+[0.034611] (ackermann_msgs) JobProgress: {'identifier': 'ackermann_msgs', 'progress': 'cmake'}
+[0.035669] (ackermann_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/emmanuel/smartcar/src/ackermann_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/emmanuel/smartcar/install/ackermann_msgs'], 'cwd': '/home/emmanuel/smartcar/build/ackermann_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/ackermann_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.050048] (smartcar_msgs) JobProgress: {'identifier': 'smartcar_msgs', 'progress': 'cmake'}
+[0.051920] (smartcar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/emmanuel/smartcar/src/smartcar_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/emmanuel/smartcar/install/smartcar_msgs'], 'cwd': '/home/emmanuel/smartcar/build/smartcar_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098409] (-) TimerEvent: {}
+[0.199112] (-) TimerEvent: {}
+[0.227844] (ackermann_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.239688] (smartcar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299222] (-) TimerEvent: {}
+[0.383747] (ackermann_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.399687] (-) TimerEvent: {}
+[0.405749] (smartcar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.408424] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.422988] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.502682] (-) TimerEvent: {}
+[0.603082] (-) TimerEvent: {}
+[0.656410] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.684667] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.691777] (ackermann_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.692053] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.692291] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.701862] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.703706] (-) TimerEvent: {}
+[0.720038] (smartcar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.722075] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.722405] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.733418] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.804200] (-) TimerEvent: {}
+[0.907548] (-) TimerEvent: {}
+[0.961503] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.987808] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.999864] (smartcar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.003664] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.003973] (smartcar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.007663] (-) TimerEvent: {}
+[1.010816] (smartcar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.017749] (ackermann_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.019731] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.022876] (ackermann_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.028102] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.107788] (-) TimerEvent: {}
+[1.208151] (-) TimerEvent: {}
+[1.308649] (-) TimerEvent: {}
+[1.309260] (smartcar_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.316140] (ackermann_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.409423] (-) TimerEvent: {}
+[1.445022] (smartcar_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.452154] (ackermann_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.495864] (smartcar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.496948] (ackermann_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.500576] (smartcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.501064] (ackermann_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.509530] (-) TimerEvent: {}
+[1.511186] (smartcar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.512215] (ackermann_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.578162] (ackermann_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.581948] (smartcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.609696] (-) TimerEvent: {}
+[1.648090] (ackermann_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.650463] (smartcar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)\n'}
+[1.655166] (smartcar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.709820] (-) TimerEvent: {}
+[1.810188] (-) TimerEvent: {}
+[1.910572] (-) TimerEvent: {}
+[2.011533] (-) TimerEvent: {}
+[2.111976] (-) TimerEvent: {}
+[2.203521] (smartcar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.209683] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[2.212049] (-) TimerEvent: {}
+[2.212884] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[2.215977] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[2.220721] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.312179] (-) TimerEvent: {}
+[2.412863] (-) TimerEvent: {}
+[2.513613] (-) TimerEvent: {}
+[2.614000] (-) TimerEvent: {}
+[2.654138] (smartcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.669990] (ackermann_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.714109] (-) TimerEvent: {}
+[2.814479] (-) TimerEvent: {}
+[2.914955] (-) TimerEvent: {}
+[3.015291] (-) TimerEvent: {}
+[3.115818] (-) TimerEvent: {}
+[3.216180] (-) TimerEvent: {}
+[3.257278] (smartcar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.284707] (ackermann_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.305752] (smartcar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.307196] (smartcar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.316350] (-) TimerEvent: {}
+[3.344049] (ackermann_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.348245] (ackermann_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.363810] (smartcar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.364324] (smartcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.364608] (smartcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.364845] (smartcar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.401438] (ackermann_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.401858] (ackermann_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.402051] (ackermann_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.402186] (ackermann_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.408327] (smartcar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.416451] (-) TimerEvent: {}
+[3.450355] (ackermann_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.513324] (smartcar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.516620] (-) TimerEvent: {}
+[3.559644] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[3.560452] (smartcar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.560803] (smartcar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.562840] (ackermann_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[3.573804] (smartcar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.590728] (ackermann_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.616744] (-) TimerEvent: {}
+[3.659790] (smartcar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.679549] (ackermann_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.689001] (smartcar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/emmanuel/smartcar/build/smartcar_msgs\n'}
+[3.701153] (smartcar_msgs) CommandEnded: {'returncode': 0}
+[3.703016] (smartcar_msgs) JobProgress: {'identifier': 'smartcar_msgs', 'progress': 'build'}
+[3.704096] (smartcar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/emmanuel/smartcar/build/smartcar_msgs', '--', '-j4', '-l4'], 'cwd': '/home/emmanuel/smartcar/build/smartcar_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.707708] (ackermann_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/emmanuel/smartcar/build/ackermann_msgs\n'}
+[3.716902] (-) TimerEvent: {}
+[3.720736] (ackermann_msgs) CommandEnded: {'returncode': 0}
+[3.721615] (ackermann_msgs) JobProgress: {'identifier': 'ackermann_msgs', 'progress': 'build'}
+[3.722182] (ackermann_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/emmanuel/smartcar/build/ackermann_msgs', '--', '-j4', '-l4'], 'cwd': '/home/emmanuel/smartcar/build/ackermann_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/ackermann_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.787423] (smartcar_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.821717] (-) TimerEvent: {}
+[3.833067] (ackermann_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.845668] (smartcar_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.913371] (ackermann_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.918759] (smartcar_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_smartcar_msgs\n'}
+[3.921812] (-) TimerEvent: {}
+[3.967445] (ackermann_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_ackermann_msgs\n'}
+[4.021960] (-) TimerEvent: {}
+[4.126905] (-) TimerEvent: {}
+[4.227967] (-) TimerEvent: {}
+[4.328942] (-) TimerEvent: {}
+[4.429692] (-) TimerEvent: {}
+[4.530840] (-) TimerEvent: {}
+[4.636721] (-) TimerEvent: {}
+[4.690732] (smartcar_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_generator_c.dir/rosidl_generator_c/smartcar_msgs/msg/detail/status__functions.c.o\x1b[0m\n'}
+[4.737553] (-) TimerEvent: {}
+[4.838048] (-) TimerEvent: {}
+[4.941700] (-) TimerEvent: {}
+[4.990317] (smartcar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libsmartcar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.043669] (-) TimerEvent: {}
+[5.149663] (-) TimerEvent: {}
+[5.250101] (-) TimerEvent: {}
+[5.251566] (smartcar_msgs) StdoutLine: {'line': b'[ 12%] Built target smartcar_msgs__rosidl_generator_c\n'}
+[5.327807] (smartcar_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.350647] (-) TimerEvent: {}
+[5.383708] (smartcar_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.390846] (smartcar_msgs) StdoutLine: {'line': b'[ 19%] Built target smartcar_msgs__cpp\n'}
+[5.451748] (smartcar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.451998] (-) TimerEvent: {}
+[5.455789] (smartcar_msgs) StdoutLine: {'line': b'creating smartcar_msgs.egg-info\n'}
+[5.459218] (smartcar_msgs) StdoutLine: {'line': b'writing smartcar_msgs.egg-info/PKG-INFO\n'}
+[5.459574] (smartcar_msgs) StdoutLine: {'line': b'writing dependency_links to smartcar_msgs.egg-info/dependency_links.txt\n'}
+[5.468737] (smartcar_msgs) StdoutLine: {'line': b'writing top-level names to smartcar_msgs.egg-info/top_level.txt\n'}
+[5.468965] (smartcar_msgs) StdoutLine: {'line': b"writing manifest file 'smartcar_msgs.egg-info/SOURCES.txt'\n"}
+[5.478328] (smartcar_msgs) StdoutLine: {'line': b"reading manifest file 'smartcar_msgs.egg-info/SOURCES.txt'\n"}
+[5.482780] (smartcar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.487412] (smartcar_msgs) StdoutLine: {'line': b"writing manifest file 'smartcar_msgs.egg-info/SOURCES.txt'\n"}
+[5.552117] (-) TimerEvent: {}
+[5.636458] (smartcar_msgs) StdoutLine: {'line': b'[ 22%] Built target ament_cmake_python_build_smartcar_msgs_egg\n'}
+[5.637284] (ackermann_msgs) StdoutLine: {'line': b'[  5%] Built target ackermann_msgs__cpp\n'}
+[5.654680] (-) TimerEvent: {}
+[5.688342] (smartcar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.724604] (ackermann_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.750917] (ackermann_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.754824] (-) TimerEvent: {}
+[5.758069] (ackermann_msgs) StdoutLine: {'line': b'creating ackermann_msgs.egg-info\n'}
+[5.758811] (ackermann_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.764638] (ackermann_msgs) StdoutLine: {'line': b'writing ackermann_msgs.egg-info/PKG-INFO\n'}
+[5.767879] (ackermann_msgs) StdoutLine: {'line': b'writing dependency_links to ackermann_msgs.egg-info/dependency_links.txt\n'}
+[5.768205] (ackermann_msgs) StdoutLine: {'line': b'writing top-level names to ackermann_msgs.egg-info/top_level.txt\n'}
+[5.771835] (ackermann_msgs) StdoutLine: {'line': b"writing manifest file 'ackermann_msgs.egg-info/SOURCES.txt'\n"}
+[5.779759] (ackermann_msgs) StdoutLine: {'line': b"reading manifest file 'ackermann_msgs.egg-info/SOURCES.txt'\n"}
+[5.785263] (ackermann_msgs) StdoutLine: {'line': b"writing manifest file 'ackermann_msgs.egg-info/SOURCES.txt'\n"}
+[5.856128] (-) TimerEvent: {}
+[5.957815] (-) TimerEvent: {}
+[6.039685] (ackermann_msgs) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_ackermann_msgs_egg\n'}
+[6.063696] (-) TimerEvent: {}
+[6.096596] (ackermann_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.163797] (-) TimerEvent: {}
+[6.268728] (-) TimerEvent: {}
+[6.370453] (-) TimerEvent: {}
+[6.472302] (-) TimerEvent: {}
+[6.579720] (-) TimerEvent: {}
+[6.684176] (-) TimerEvent: {}
+[6.797827] (-) TimerEvent: {}
+[6.901718] (smartcar_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smartcar_msgs/msg/detail/status__type_support.c.o\x1b[0m\n'}
+[6.902160] (-) TimerEvent: {}
+[7.006661] (-) TimerEvent: {}
+[7.111095] (-) TimerEvent: {}
+[7.218711] (-) TimerEvent: {}
+[7.220929] (smartcar_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32m\x1b[1mLinking C shared library libsmartcar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.315013] (ackermann_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive__functions.c.o\x1b[0m\n'}
+[7.323663] (-) TimerEvent: {}
+[7.394995] (smartcar_msgs) StdoutLine: {'line': b'[ 32%] Built target smartcar_msgs__rosidl_typesupport_introspection_c\n'}
+[7.423565] (smartcar_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/smartcar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smartcar_msgs/msg/detail/status__type_support_c.cpp.o\x1b[0m\n'}
+[7.423892] (-) TimerEvent: {}
+[7.448842] (smartcar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/smartcar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/smartcar_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[7.467074] (smartcar_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.530661] (-) TimerEvent: {}
+[7.631825] (-) TimerEvent: {}
+[7.732762] (-) TimerEvent: {}
+[7.757568] (smartcar_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libsmartcar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.834734] (-) TimerEvent: {}
+[7.849327] (ackermann_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c.o\x1b[0m\n'}
+[7.882210] (smartcar_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/smartcar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smartcar_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o\x1b[0m\n'}
+[7.938693] (-) TimerEvent: {}
+[8.043792] (-) TimerEvent: {}
+[8.145269] (-) TimerEvent: {}
+[8.167022] (smartcar_msgs) StdoutLine: {'line': b'[ 48%] Built target smartcar_msgs__rosidl_typesupport_c\n'}
+[8.254159] (-) TimerEvent: {}
+[8.292954] (smartcar_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.335741] (ackermann_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libackermann_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[8.365657] (-) TimerEvent: {}
+[8.468234] (-) TimerEvent: {}
+[8.569538] (-) TimerEvent: {}
+[8.635823] (ackermann_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o\x1b[0m\n'}
+[8.670458] (-) TimerEvent: {}
+[8.773209] (-) TimerEvent: {}
+[8.777728] (ackermann_msgs) StdoutLine: {'line': b'[ 23%] Built target ackermann_msgs__rosidl_generator_c\n'}
+[8.875652] (ackermann_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o\x1b[0m\n'}
+[8.875917] (-) TimerEvent: {}
+[8.986714] (-) TimerEvent: {}
+[9.087267] (-) TimerEvent: {}
+[9.195078] (-) TimerEvent: {}
+[9.296534] (-) TimerEvent: {}
+[9.400911] (-) TimerEvent: {}
+[9.402799] (ackermann_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive__type_support.cpp.o\x1b[0m\n'}
+[9.503659] (-) TimerEvent: {}
+[9.609712] (-) TimerEvent: {}
+[9.710301] (-) TimerEvent: {}
+[9.812764] (-) TimerEvent: {}
+[9.914737] (-) TimerEvent: {}
+[9.989991] (ackermann_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.016825] (-) TimerEvent: {}
+[10.055783] (ackermann_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp.o\x1b[0m\n'}
+[10.116941] (-) TimerEvent: {}
+[10.173889] (smartcar_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/smartcar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smartcar_msgs/msg/detail/status__type_support.cpp.o\x1b[0m\n'}
+[10.219695] (-) TimerEvent: {}
+[10.320993] (-) TimerEvent: {}
+[10.421859] (-) TimerEvent: {}
+[10.524741] (-) TimerEvent: {}
+[10.621040] (smartcar_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libsmartcar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.627284] (-) TimerEvent: {}
+[10.728856] (-) TimerEvent: {}
+[10.833038] (-) TimerEvent: {}
+[10.889470] (ackermann_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.933728] (-) TimerEvent: {}
+[11.036395] (-) TimerEvent: {}
+[11.124659] (ackermann_msgs) StdoutLine: {'line': b'[ 35%] Built target ackermann_msgs__rosidl_typesupport_cpp\n'}
+[11.137333] (-) TimerEvent: {}
+[11.240831] (ackermann_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp.o\x1b[0m\n'}
+[11.241179] (-) TimerEvent: {}
+[11.254627] (smartcar_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/smartcar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smartcar_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[11.341298] (-) TimerEvent: {}
+[11.428386] (smartcar_msgs) StdoutLine: {'line': b'[ 61%] Built target smartcar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[11.441852] (-) TimerEvent: {}
+[11.506542] (smartcar_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libsmartcar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.548658] (-) TimerEvent: {}
+[11.649077] (-) TimerEvent: {}
+[11.731234] (ackermann_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive_stamped__type_support.cpp.o\x1b[0m\n'}
+[11.749578] (-) TimerEvent: {}
+[11.838847] (smartcar_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libsmartcar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.850649] (-) TimerEvent: {}
+[11.951050] (-) TimerEvent: {}
+[12.054314] (-) TimerEvent: {}
+[12.095920] (smartcar_msgs) StdoutLine: {'line': b'[ 67%] Built target smartcar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.154509] (-) TimerEvent: {}
+[12.223780] (smartcar_msgs) StdoutLine: {'line': b'[ 67%] Built target smartcar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.254616] (-) TimerEvent: {}
+[12.355727] (-) TimerEvent: {}
+[12.374469] (ackermann_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive__type_support_c.cpp.o\x1b[0m\n'}
+[12.382675] (ackermann_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.458730] (-) TimerEvent: {}
+[12.560005] (-) TimerEvent: {}
+[12.661067] (-) TimerEvent: {}
+[12.765671] (-) TimerEvent: {}
+[12.866546] (-) TimerEvent: {}
+[12.966187] (smartcar_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libsmartcar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.966668] (-) TimerEvent: {}
+[13.031374] (ackermann_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.066792] (-) TimerEvent: {}
+[13.159355] (smartcar_msgs) StdoutLine: {'line': b'[ 70%] Built target smartcar_msgs__rosidl_typesupport_cpp\n'}
+[13.168097] (-) TimerEvent: {}
+[13.269252] (-) TimerEvent: {}
+[13.299165] (smartcar_msgs) StdoutLine: {'line': b'[ 70%] Built target smartcar_msgs\n'}
+[13.304671] (ackermann_msgs) StdoutLine: {'line': b'[ 48%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp\n'}
+[13.365307] (ackermann_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[13.367919] (smartcar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.369417] (-) TimerEvent: {}
+[13.385906] (ackermann_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.469611] (-) TimerEvent: {}
+[13.572308] (-) TimerEvent: {}
+[13.673380] (-) TimerEvent: {}
+[13.690674] (ackermann_msgs) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.710239] (ackermann_msgs) StdoutLine: {'line': b'[ 56%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[13.773519] (-) TimerEvent: {}
+[13.875520] (-) TimerEvent: {}
+[13.976490] (-) TimerEvent: {}
+[14.078792] (-) TimerEvent: {}
+[14.179966] (-) TimerEvent: {}
+[14.280916] (-) TimerEvent: {}
+[14.341243] (ackermann_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive__type_support.c.o\x1b[0m\n'}
+[14.369721] (ackermann_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c.o\x1b[0m\n'}
+[14.380995] (-) TimerEvent: {}
+[14.423407] (smartcar_msgs) StdoutLine: {'line': b'[ 74%] Built target smartcar_msgs__py\n'}
+[14.477033] (smartcar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_generator_py.dir/rosidl_generator_py/smartcar_msgs/msg/_status_s.c.o\x1b[0m\n'}
+[14.481105] (-) TimerEvent: {}
+[14.511379] (ackermann_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libackermann_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.581228] (-) TimerEvent: {}
+[14.591934] (ackermann_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.605722] (ackermann_msgs) StdoutLine: {'line': b'[ 66%] Built target ackermann_msgs__rosidl_typesupport_introspection_c\n'}
+[14.681399] (-) TimerEvent: {}
+[14.711921] (ackermann_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o\x1b[0m\n'}
+[14.713484] (ackermann_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o\x1b[0m\n'}
+[14.785810] (smartcar_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/smartcar_msgs/libsmartcar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.786237] (-) TimerEvent: {}
+[14.833565] (ackermann_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.846562] (ackermann_msgs) StdoutLine: {'line': b'[ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c\n'}
+[14.886356] (-) TimerEvent: {}
+[14.903831] (smartcar_msgs) StdoutLine: {'line': b'[ 80%] Built target smartcar_msgs__rosidl_generator_py\n'}
+[14.943414] (ackermann_msgs) StdoutLine: {'line': b'[ 74%] Built target ackermann_msgs__rosidl_typesupport_c\n'}
+[14.956892] (smartcar_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.959806] (smartcar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.961639] (smartcar_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/smartcar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.987953] (-) TimerEvent: {}
+[14.996833] (ackermann_msgs) StdoutLine: {'line': b'[ 74%] Built target ackermann_msgs\n'}
+[15.047217] (ackermann_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.088057] (-) TimerEvent: {}
+[15.188438] (-) TimerEvent: {}
+[15.241719] (smartcar_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.260814] (smartcar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.288886] (-) TimerEvent: {}
+[15.346951] (smartcar_msgs) StdoutLine: {'line': b'[ 96%] Built target smartcar_msgs__rosidl_typesupport_c__pyext\n'}
+[15.375171] (smartcar_msgs) StdoutLine: {'line': b'[ 96%] Built target smartcar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[15.380572] (smartcar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.390281] (-) TimerEvent: {}
+[15.453947] (smartcar_msgs) StdoutLine: {'line': b'[100%] Built target smartcar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.478916] (smartcar_msgs) CommandEnded: {'returncode': 0}
+[15.480073] (smartcar_msgs) JobProgress: {'identifier': 'smartcar_msgs', 'progress': 'install'}
+[15.490698] (-) TimerEvent: {}
+[15.496129] (smartcar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/emmanuel/smartcar/build/smartcar_msgs'], 'cwd': '/home/emmanuel/smartcar/build/smartcar_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.512771] (smartcar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.514188] (smartcar_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.515201] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/ament_index/resource_index/rosidl_interfaces/smartcar_msgs\n'}
+[15.533997] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__functions.h\n'}
+[15.549378] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__struct.h\n'}
+[15.563859] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__type_support.h\n'}
+[15.577896] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.590794] (-) TimerEvent: {}
+[15.596113] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/status.h\n'}
+[15.613332] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/library_path.sh\n'}
+[15.632891] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/library_path.dsv\n'}
+[15.647725] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h\n'}
+[15.665530] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.681102] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h\n'}
+[15.690922] (-) TimerEvent: {}
+[15.696846] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.716159] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__builder.hpp\n'}
+[15.733330] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__struct.hpp\n'}
+[15.748094] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__traits.hpp\n'}
+[15.765675] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__type_support.hpp\n'}
+[15.780186] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.791031] (-) TimerEvent: {}
+[15.795153] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/status.hpp\n'}
+[15.812930] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.828562] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.843541] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/include/smartcar_msgs/smartcar_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.857254] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/pythonpath.sh\n'}
+[15.872415] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/pythonpath.dsv\n'}
+[15.891244] (-) TimerEvent: {}
+[15.893094] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.916009] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.932095] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.945333] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.961055] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/__init__.py\n'}
+[15.978642] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[15.991361] (-) TimerEvent: {}
+[15.993210] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.008454] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/_smartcar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.026578] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/libsmartcar_msgs__rosidl_generator_py.so\n'}
+[16.041918] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg/__init__.py\n'}
+[16.056316] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg/_status.py\n'}
+[16.068347] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg/_status_s.c\n'}
+[16.083800] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.091520] (-) TimerEvent: {}
+[16.098705] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.111781] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.127277] (smartcar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.127925] (smartcar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.128425] (smartcar_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/smartcar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.130017] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/msg/Status.idl\n'}
+[16.150578] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/msg/Status.msg\n'}
+[16.165910] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs//README.md\n'}
+[16.179895] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/ament_index/resource_index/package_run_dependencies/smartcar_msgs\n'}
+[16.191650] (-) TimerEvent: {}
+[16.194175] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/ament_index/resource_index/parent_prefix_path/smartcar_msgs\n'}
+[16.211382] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/ament_prefix_path.sh\n'}
+[16.226726] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/ament_prefix_path.dsv\n'}
+[16.243340] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/path.sh\n'}
+[16.275045] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/environment/path.dsv\n'}
+[16.291801] (-) TimerEvent: {}
+[16.294086] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/local_setup.bash\n'}
+[16.314640] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/local_setup.sh\n'}
+[16.335559] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/local_setup.zsh\n'}
+[16.354699] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/local_setup.dsv\n'}
+[16.374141] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/package.dsv\n'}
+[16.393508] (-) TimerEvent: {}
+[16.394074] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/ament_index/resource_index/packages/smartcar_msgs\n'}
+[16.417262] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.437097] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.457344] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.479699] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.493665] (-) TimerEvent: {}
+[16.510007] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.527801] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.575969] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.593843] (-) TimerEvent: {}
+[16.597628] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgsConfig.cmake\n'}
+[16.605044] (ackermann_msgs) StdoutLine: {'line': b'[ 76%] Built target ackermann_msgs__py\n'}
+[16.621795] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgsConfig-version.cmake\n'}
+[16.643700] (smartcar_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/package.xml\n'}
+[16.655515] (ackermann_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_py.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_stamped_s.c.o\x1b[0m\n'}
+[16.659318] (ackermann_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_py.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_s.c.o\x1b[0m\n'}
+[16.661540] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_generator_c.so\n'}
+[16.662171] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_generator_c.so" to ""\n'}
+[16.662895] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[16.665035] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.665950] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[16.667763] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.668055] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_c.so\n'}
+[16.669669] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[16.670016] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.670870] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.671096] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[16.671279] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.672114] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_cpp.so\n'}
+[16.672341] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[16.693945] (-) TimerEvent: {}
+[16.764417] (smartcar_msgs) StdoutLine: {'line': b"Listing '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs'...\n"}
+[16.764720] (smartcar_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/__init__.py'...\n"}
+[16.764893] (smartcar_msgs) StdoutLine: {'line': b"Listing '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg'...\n"}
+[16.765055] (smartcar_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg/__init__.py'...\n"}
+[16.765190] (smartcar_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages/smartcar_msgs/msg/_status.py'...\n"}
+[16.778905] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_generator_py.so\n'}
+[16.781038] (smartcar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/smartcar_msgs/lib/libsmartcar_msgs__rosidl_generator_py.so" to ""\n'}
+[16.781710] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_generator_cExport.cmake\n'}
+[16.782527] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.783322] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.784116] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.784942] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.786037] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.786352] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.787580] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.787976] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.789665] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.790930] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.791378] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.791710] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.792083] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.792389] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/smartcar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.792881] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.793625] (smartcar_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake/export_smartcar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.793956] (-) TimerEvent: {}
+[16.798337] (smartcar_msgs) CommandEnded: {'returncode': 0}
+[16.857887] (smartcar_msgs) JobEnded: {'identifier': 'smartcar_msgs', 'rc': 0}
+[16.894080] (-) TimerEvent: {}
+[16.907856] (ackermann_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ackermann_msgs/libackermann_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.989600] (ackermann_msgs) StdoutLine: {'line': b'[ 84%] Built target ackermann_msgs__rosidl_generator_py\n'}
+[16.995540] (-) TimerEvent: {}
+[17.032816] (ackermann_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.036443] (ackermann_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[17.037579] (ackermann_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.095633] (-) TimerEvent: {}
+[17.196947] (-) TimerEvent: {}
+[17.258989] (ackermann_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.293915] (ackermann_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.297274] (-) TimerEvent: {}
+[17.311284] (ackermann_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.363536] (ackermann_msgs) StdoutLine: {'line': b'[100%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[17.385558] (ackermann_msgs) StdoutLine: {'line': b'[100%] Built target ackermann_msgs__rosidl_typesupport_c__pyext\n'}
+[17.397428] (-) TimerEvent: {}
+[17.400950] (ackermann_msgs) StdoutLine: {'line': b'[100%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[17.423383] (ackermann_msgs) CommandEnded: {'returncode': 0}
+[17.425409] (ackermann_msgs) JobProgress: {'identifier': 'ackermann_msgs', 'progress': 'install'}
+[17.425952] (ackermann_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/emmanuel/smartcar/build/ackermann_msgs'], 'cwd': '/home/emmanuel/smartcar/build/ackermann_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/ackermann_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.441725] (ackermann_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.443084] (ackermann_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.443745] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ament_index/resource_index/rosidl_interfaces/ackermann_msgs\n'}
+[17.457945] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive.h\n'}
+[17.471978] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive_stamped.h\n'}
+[17.484920] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__functions.h\n'}
+[17.497572] (-) TimerEvent: {}
+[17.498848] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__struct.h\n'}
+[17.513101] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.h\n'}
+[17.526820] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.h\n'}
+[17.541129] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.h\n'}
+[17.554184] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.h\n'}
+[17.568489] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.582018] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.sh\n'}
+[17.595054] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.dsv\n'}
+[17.597688] (-) TimerEvent: {}
+[17.609937] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_c.h\n'}
+[17.626422] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[17.643231] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.657729] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_c.h\n'}
+[17.671436] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_c.h\n'}
+[17.685071] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.697796] (-) TimerEvent: {}
+[17.700007] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive.hpp\n'}
+[17.713630] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive_stamped.hpp\n'}
+[17.728447] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__builder.hpp\n'}
+[17.743474] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__struct.hpp\n'}
+[17.756998] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__traits.hpp\n'}
+[17.770790] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.hpp\n'}
+[17.784190] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__builder.hpp\n'}
+[17.797391] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.hpp\n'}
+[17.797930] (-) TimerEvent: {}
+[17.812750] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__traits.hpp\n'}
+[17.827808] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.hpp\n'}
+[17.841524] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.857789] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.871522] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.884918] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.898074] (-) TimerEvent: {}
+[17.899968] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.913641] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.929497] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.sh\n'}
+[17.943341] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.dsv\n'}
+[17.958657] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/PKG-INFO\n'}
+[17.973222] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/SOURCES.txt\n'}
+[17.987230] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/dependency_links.txt\n'}
+[17.998201] (-) TimerEvent: {}
+[18.000987] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/top_level.txt\n'}
+[18.016875] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/__init__.py\n'}
+[18.031071] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[18.044818] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[18.058862] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[18.074138] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.089767] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.098337] (-) TimerEvent: {}
+[18.104820] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.118895] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/libackermann_msgs__rosidl_generator_py.so\n'}
+[18.134312] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/__init__.py\n'}
+[18.147839] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive.py\n'}
+[18.161765] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_s.c\n'}
+[18.175907] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped.py\n'}
+[18.189421] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped_s.c\n'}
+[18.198457] (-) TimerEvent: {}
+[18.208063] (ackermann_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.208379] (ackermann_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.208685] (ackermann_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.208936] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.idl\n'}
+[18.222491] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.idl\n'}
+[18.238928] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.msg\n'}
+[18.252721] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.msg\n'}
+[18.267711] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ament_index/resource_index/package_run_dependencies/ackermann_msgs\n'}
+[18.283048] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ament_index/resource_index/parent_prefix_path/ackermann_msgs\n'}
+[18.297106] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.sh\n'}
+[18.298567] (-) TimerEvent: {}
+[18.312259] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.dsv\n'}
+[18.327765] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/path.sh\n'}
+[18.341164] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/environment/path.dsv\n'}
+[18.356003] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/local_setup.bash\n'}
+[18.370005] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/local_setup.sh\n'}
+[18.383400] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/local_setup.zsh\n'}
+[18.397351] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/local_setup.dsv\n'}
+[18.398843] (-) TimerEvent: {}
+[18.411536] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/package.dsv\n'}
+[18.427262] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ament_index/resource_index/packages/ackermann_msgs\n'}
+[18.441085] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[18.456680] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.473011] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.487203] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.498969] (-) TimerEvent: {}
+[18.501798] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.516251] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[18.531970] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[18.545460] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig.cmake\n'}
+[18.559436] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig-version.cmake\n'}
+[18.574944] (ackermann_msgs) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/package.xml\n'}
+[18.589915] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so\n'}
+[18.591045] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so" to ""\n'}
+[18.591410] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[18.592146] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[18.592648] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so\n'}
+[18.593509] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.594070] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so\n'}
+[18.594642] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so" to ""\n'}
+[18.594895] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.595644] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[18.595899] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[18.596669] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.596881] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so\n'}
+[18.597517] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[18.599070] (-) TimerEvent: {}
+[18.658696] (ackermann_msgs) StdoutLine: {'line': b"Listing '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs'...\n"}
+[18.658958] (ackermann_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/__init__.py'...\n"}
+[18.659117] (ackermann_msgs) StdoutLine: {'line': b"Listing '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg'...\n"}
+[18.659207] (ackermann_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/__init__.py'...\n"}
+[18.659282] (ackermann_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive.py'...\n"}
+[18.659366] (ackermann_msgs) StdoutLine: {'line': b"Compiling '/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped.py'...\n"}
+[18.668139] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_py.so\n'}
+[18.668954] (ackermann_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/emmanuel/smartcar/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_py.so" to ""\n'}
+[18.669277] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cExport.cmake\n'}
+[18.669668] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[18.669973] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[18.670195] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[18.670451] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[18.670800] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[18.671093] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport.cmake\n'}
+[18.671350] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[18.671677] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cppExport.cmake\n'}
+[18.672010] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[18.672285] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[18.672576] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[18.673123] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[18.673379] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[18.673627] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[18.673858] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_pyExport.cmake\n'}
+[18.674101] (ackermann_msgs) StdoutLine: {'line': b'-- Installing: /home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[18.678769] (ackermann_msgs) CommandEnded: {'returncode': 0}
+[18.699325] (-) TimerEvent: {}
+[18.706340] (ackermann_msgs) JobEnded: {'identifier': 'ackermann_msgs', 'rc': 0}
+[18.708304] (smartcar) JobStarted: {'identifier': 'smartcar'}
+[18.727173] (smartcar) JobProgress: {'identifier': 'smartcar', 'progress': 'cmake'}
+[18.728353] (smartcar) Command: {'cmd': ['/usr/bin/cmake', '/home/emmanuel/smartcar/src/smartcar', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/emmanuel/smartcar/install/smartcar'], 'cwd': '/home/emmanuel/smartcar/build/smartcar', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble')]), 'shell': False}
+[18.799475] (-) TimerEvent: {}
+[18.837644] (smartcar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[18.899602] (-) TimerEvent: {}
+[18.938447] (smartcar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[18.951736] (smartcar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.999664] (-) TimerEvent: {}
+[19.069417] (smartcar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[19.090508] (smartcar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[19.090939] (smartcar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[19.091822] (smartcar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[19.099609] (smartcar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[19.099895] (-) TimerEvent: {}
+[19.200273] (-) TimerEvent: {}
+[19.263239] (smartcar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.281569] (smartcar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.282015] (smartcar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.282710] (smartcar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.286962] (smartcar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[19.300387] (-) TimerEvent: {}
+[19.400707] (-) TimerEvent: {}
+[19.501153] (-) TimerEvent: {}
+[19.559316] (smartcar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[19.601250] (-) TimerEvent: {}
+[19.666838] (smartcar) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.701361] (-) TimerEvent: {}
+[19.713554] (smartcar) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[19.801673] (-) TimerEvent: {}
+[19.805738] (smartcar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[19.816465] (smartcar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[19.833813] (smartcar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[19.855457] (smartcar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[19.883465] (smartcar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[19.901742] (-) TimerEvent: {}
+[19.963583] (smartcar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[19.968564] (smartcar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[20.002025] (-) TimerEvent: {}
+[20.102567] (-) TimerEvent: {}
+[20.126038] (smartcar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[20.171694] (smartcar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[20.202743] (-) TimerEvent: {}
+[20.244843] (smartcar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[20.260399] (smartcar) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[20.302845] (-) TimerEvent: {}
+[20.384206] (smartcar) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[20.384608] (smartcar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[20.402961] (-) TimerEvent: {}
+[20.503399] (-) TimerEvent: {}
+[20.518171] (smartcar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[20.520114] (smartcar) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[20.603615] (-) TimerEvent: {}
+[20.610010] (smartcar) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[20.613321] (smartcar) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[20.672631] (smartcar) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[20.702118] (smartcar) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[20.703689] (-) TimerEvent: {}
+[20.721145] (smartcar) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[20.803836] (-) TimerEvent: {}
+[20.893430] (smartcar) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[20.903930] (-) TimerEvent: {}
+[20.943390] (smartcar) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)\n'}
+[20.946040] (smartcar) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[20.975231] (smartcar) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[20.977286] (smartcar) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[20.977574] (smartcar) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[20.988676] (smartcar) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[20.999063] (smartcar) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[21.001543] (smartcar) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[21.004044] (-) TimerEvent: {}
+[21.026729] (smartcar) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[21.104157] (-) TimerEvent: {}
+[21.204522] (-) TimerEvent: {}
+[21.214218] (smartcar) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[21.304673] (-) TimerEvent: {}
+[21.311033] (smartcar) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[21.346082] (smartcar) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[21.393456] (smartcar) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[21.404791] (-) TimerEvent: {}
+[21.416063] (smartcar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[21.426024] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[21.438352] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[21.441974] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[21.442894] (smartcar) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[21.452422] (smartcar) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[21.476887] (smartcar) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[21.504904] (-) TimerEvent: {}
+[21.542645] (smartcar) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[21.564582] (smartcar) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[21.584473] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[21.599670] (smartcar) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[21.599955] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[21.604999] (-) TimerEvent: {}
+[21.614054] (smartcar) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[21.614394] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[21.633704] (smartcar) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[21.634082] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[21.651451] (smartcar) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[21.651786] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[21.680793] (smartcar) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[21.681317] (smartcar) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[21.697643] (smartcar) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[21.705679] (-) TimerEvent: {}
+[21.806173] (-) TimerEvent: {}
+[21.906569] (-) TimerEvent: {}
+[22.007531] (-) TimerEvent: {}
+[22.092200] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.095723] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[22.096603] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[22.107713] (-) TimerEvent: {}
+[22.130987] (smartcar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[22.152662] (smartcar) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[22.161840] (smartcar) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[22.192899] (smartcar) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[22.207954] (-) TimerEvent: {}
+[22.298451] (smartcar) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[22.308104] (-) TimerEvent: {}
+[22.308764] (smartcar) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[22.336425] (smartcar) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[22.408219] (-) TimerEvent: {}
+[22.417472] (smartcar) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[22.422501] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.425083] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[22.462699] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.472036] (smartcar) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[22.504640] (smartcar) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[22.508354] (-) TimerEvent: {}
+[22.592786] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.598656] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[22.599761] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[22.600399] (smartcar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[22.603352] (smartcar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[22.606680] (smartcar) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[22.608472] (-) TimerEvent: {}
+[22.635818] (smartcar) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[22.637495] (smartcar) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[22.648747] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[22.648999] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[22.649176] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.658446] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[22.659690] (smartcar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[22.708661] (-) TimerEvent: {}
+[22.809207] (-) TimerEvent: {}
+[22.902639] (smartcar) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[22.909336] (-) TimerEvent: {}
+[22.917171] (smartcar) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[22.942446] (smartcar) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[23.002964] (smartcar) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[23.009471] (-) TimerEvent: {}
+[23.011747] (smartcar) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[23.036975] (smartcar) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[23.098938] (smartcar) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[23.099844] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[23.101547] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[23.102056] (smartcar) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[23.108919] (smartcar) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[23.109298] (smartcar) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[23.109548] (-) TimerEvent: {}
+[23.135183] (smartcar) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[23.199533] (smartcar) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[23.205086] (smartcar) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake)\n'}
+[23.209666] (-) TimerEvent: {}
+[23.227341] (smartcar) StdoutLine: {'line': b'-- Found smartcar_msgs: 0.0.0 (/home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake)\n'}
+[23.264344] (smartcar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[23.309959] (-) TimerEvent: {}
+[23.410343] (-) TimerEvent: {}
+[23.411960] (smartcar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[23.412807] (smartcar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/emmanuel/smartcar/src/smartcar/car_plugin>\n'}
+[23.412939] (smartcar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[23.414063] (smartcar) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[23.415474] (smartcar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[23.416939] (smartcar) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[23.422805] (smartcar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[23.423529] (smartcar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[23.424678] (smartcar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[23.427208] (smartcar) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.480887] (smartcar) StdoutLine: {'line': b'-- Generating done\n'}
+[23.489438] (smartcar) StdoutLine: {'line': b'-- Build files have been written to: /home/emmanuel/smartcar/build/smartcar\n'}
+[23.510597] (-) TimerEvent: {}
+[23.521348] (smartcar) CommandEnded: {'returncode': 0}
+[23.522933] (smartcar) JobProgress: {'identifier': 'smartcar', 'progress': 'build'}
+[23.524802] (smartcar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/emmanuel/smartcar/build/smartcar', '--', '-j4', '-l4'], 'cwd': '/home/emmanuel/smartcar/build/smartcar', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble')]), 'shell': False}
+[23.610705] (-) TimerEvent: {}
+[23.628938] (smartcar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/car_plugin/car_gazebo_plugin.cpp.o\x1b[0m\n'}
+[23.710878] (-) TimerEvent: {}
+[23.811327] (-) TimerEvent: {}
+[23.911688] (-) TimerEvent: {}
+[24.012003] (-) TimerEvent: {}
+[24.112422] (-) TimerEvent: {}
+[24.212955] (-) TimerEvent: {}
+[24.313481] (-) TimerEvent: {}
+[24.413914] (-) TimerEvent: {}
+[24.514289] (-) TimerEvent: {}
+[24.614776] (-) TimerEvent: {}
+[24.715267] (-) TimerEvent: {}
+[24.815740] (-) TimerEvent: {}
+[24.916210] (-) TimerEvent: {}
+[25.016657] (-) TimerEvent: {}
+[25.117010] (-) TimerEvent: {}
+[25.217658] (-) TimerEvent: {}
+[25.318212] (-) TimerEvent: {}
+[25.418569] (-) TimerEvent: {}
+[25.518980] (-) TimerEvent: {}
+[25.619410] (-) TimerEvent: {}
+[25.720175] (-) TimerEvent: {}
+[25.820551] (-) TimerEvent: {}
+[25.921099] (-) TimerEvent: {}
+[26.021549] (-) TimerEvent: {}
+[26.122024] (-) TimerEvent: {}
+[26.222325] (-) TimerEvent: {}
+[26.322691] (-) TimerEvent: {}
+[26.423027] (-) TimerEvent: {}
+[26.523359] (-) TimerEvent: {}
+[26.623714] (-) TimerEvent: {}
+[26.724285] (-) TimerEvent: {}
+[26.824768] (-) TimerEvent: {}
+[26.925362] (-) TimerEvent: {}
+[27.025817] (-) TimerEvent: {}
+[27.126286] (-) TimerEvent: {}
+[27.226745] (-) TimerEvent: {}
+[27.327386] (-) TimerEvent: {}
+[27.427937] (-) TimerEvent: {}
+[27.528301] (-) TimerEvent: {}
+[27.628734] (-) TimerEvent: {}
+[27.729332] (-) TimerEvent: {}
+[27.831735] (-) TimerEvent: {}
+[27.932209] (-) TimerEvent: {}
+[28.032656] (-) TimerEvent: {}
+[28.133646] (-) TimerEvent: {}
+[28.234311] (-) TimerEvent: {}
+[28.334970] (-) TimerEvent: {}
+[28.435309] (-) TimerEvent: {}
+[28.535683] (-) TimerEvent: {}
+[28.636009] (-) TimerEvent: {}
+[28.736335] (-) TimerEvent: {}
+[28.836709] (-) TimerEvent: {}
+[28.937261] (-) TimerEvent: {}
+[29.037578] (-) TimerEvent: {}
+[29.137923] (-) TimerEvent: {}
+[29.238269] (-) TimerEvent: {}
+[29.338645] (-) TimerEvent: {}
+[29.439059] (-) TimerEvent: {}
+[29.539370] (-) TimerEvent: {}
+[29.639873] (-) TimerEvent: {}
+[29.740214] (-) TimerEvent: {}
+[29.840633] (-) TimerEvent: {}
+[29.941264] (-) TimerEvent: {}
+[30.041650] (-) TimerEvent: {}
+[30.142055] (-) TimerEvent: {}
+[30.242418] (-) TimerEvent: {}
+[30.342776] (-) TimerEvent: {}
+[30.443171] (-) TimerEvent: {}
+[30.543549] (-) TimerEvent: {}
+[30.644000] (-) TimerEvent: {}
+[30.744337] (-) TimerEvent: {}
+[30.844664] (-) TimerEvent: {}
+[30.945071] (-) TimerEvent: {}
+[31.045572] (-) TimerEvent: {}
+[31.146113] (-) TimerEvent: {}
+[31.246487] (-) TimerEvent: {}
+[31.347193] (-) TimerEvent: {}
+[31.447889] (-) TimerEvent: {}
+[31.548317] (-) TimerEvent: {}
+[31.648771] (-) TimerEvent: {}
+[31.749180] (-) TimerEvent: {}
+[31.849630] (-) TimerEvent: {}
+[31.950031] (-) TimerEvent: {}
+[32.050416] (-) TimerEvent: {}
+[32.150879] (-) TimerEvent: {}
+[32.251255] (-) TimerEvent: {}
+[32.351791] (-) TimerEvent: {}
+[32.452149] (-) TimerEvent: {}
+[32.553050] (-) TimerEvent: {}
+[32.653678] (-) TimerEvent: {}
+[32.754221] (-) TimerEvent: {}
+[32.854779] (-) TimerEvent: {}
+[32.955376] (-) TimerEvent: {}
+[33.055740] (-) TimerEvent: {}
+[33.156063] (-) TimerEvent: {}
+[33.256400] (-) TimerEvent: {}
+[33.356740] (-) TimerEvent: {}
+[33.457231] (-) TimerEvent: {}
+[33.557545] (-) TimerEvent: {}
+[33.657935] (-) TimerEvent: {}
+[33.758294] (-) TimerEvent: {}
+[33.858782] (-) TimerEvent: {}
+[33.959165] (-) TimerEvent: {}
+[34.059638] (-) TimerEvent: {}
+[34.159976] (-) TimerEvent: {}
+[34.260283] (-) TimerEvent: {}
+[34.360639] (-) TimerEvent: {}
+[34.460939] (-) TimerEvent: {}
+[34.561257] (-) TimerEvent: {}
+[34.661613] (-) TimerEvent: {}
+[34.761987] (-) TimerEvent: {}
+[34.862385] (-) TimerEvent: {}
+[34.962689] (-) TimerEvent: {}
+[35.064955] (-) TimerEvent: {}
+[35.165435] (-) TimerEvent: {}
+[35.266150] (-) TimerEvent: {}
+[35.366551] (-) TimerEvent: {}
+[35.467079] (-) TimerEvent: {}
+[35.567776] (-) TimerEvent: {}
+[35.668284] (-) TimerEvent: {}
+[35.768644] (-) TimerEvent: {}
+[35.868933] (-) TimerEvent: {}
+[35.969256] (-) TimerEvent: {}
+[36.069607] (-) TimerEvent: {}
+[36.169939] (-) TimerEvent: {}
+[36.270255] (-) TimerEvent: {}
+[36.370786] (-) TimerEvent: {}
+[36.471355] (-) TimerEvent: {}
+[36.571853] (-) TimerEvent: {}
+[36.672291] (-) TimerEvent: {}
+[36.772818] (-) TimerEvent: {}
+[36.873257] (-) TimerEvent: {}
+[36.973892] (-) TimerEvent: {}
+[37.074408] (-) TimerEvent: {}
+[37.174829] (-) TimerEvent: {}
+[37.275116] (-) TimerEvent: {}
+[37.375523] (-) TimerEvent: {}
+[37.475892] (-) TimerEvent: {}
+[37.576344] (-) TimerEvent: {}
+[37.676689] (-) TimerEvent: {}
+[37.777004] (-) TimerEvent: {}
+[37.877299] (-) TimerEvent: {}
+[37.977679] (-) TimerEvent: {}
+[38.078095] (-) TimerEvent: {}
+[38.178553] (-) TimerEvent: {}
+[38.278965] (-) TimerEvent: {}
+[38.379353] (-) TimerEvent: {}
+[38.479844] (-) TimerEvent: {}
+[38.580226] (-) TimerEvent: {}
+[38.680749] (-) TimerEvent: {}
+[38.781261] (-) TimerEvent: {}
+[38.881657] (-) TimerEvent: {}
+[38.981963] (-) TimerEvent: {}
+[39.082375] (-) TimerEvent: {}
+[39.182790] (-) TimerEvent: {}
+[39.283195] (-) TimerEvent: {}
+[39.383676] (-) TimerEvent: {}
+[39.484140] (-) TimerEvent: {}
+[39.584625] (-) TimerEvent: {}
+[39.684963] (-) TimerEvent: {}
+[39.785321] (-) TimerEvent: {}
+[39.886089] (-) TimerEvent: {}
+[39.986633] (-) TimerEvent: {}
+[40.087189] (-) TimerEvent: {}
+[40.187755] (-) TimerEvent: {}
+[40.288311] (-) TimerEvent: {}
+[40.388713] (-) TimerEvent: {}
+[40.489030] (-) TimerEvent: {}
+[40.589363] (-) TimerEvent: {}
+[40.689651] (-) TimerEvent: {}
+[40.789952] (-) TimerEvent: {}
+[40.890240] (-) TimerEvent: {}
+[40.990560] (-) TimerEvent: {}
+[41.090970] (-) TimerEvent: {}
+[41.191353] (-) TimerEvent: {}
+[41.291754] (-) TimerEvent: {}
+[41.392160] (-) TimerEvent: {}
+[41.492619] (-) TimerEvent: {}
+[41.592946] (-) TimerEvent: {}
+[41.693404] (-) TimerEvent: {}
+[41.793816] (-) TimerEvent: {}
+[41.894215] (-) TimerEvent: {}
+[41.994662] (-) TimerEvent: {}
+[42.095121] (-) TimerEvent: {}
+[42.195450] (-) TimerEvent: {}
+[42.295759] (-) TimerEvent: {}
+[42.396136] (-) TimerEvent: {}
+[42.496635] (-) TimerEvent: {}
+[42.597015] (-) TimerEvent: {}
+[42.697598] (-) TimerEvent: {}
+[42.797998] (-) TimerEvent: {}
+[42.898380] (-) TimerEvent: {}
+[42.998889] (-) TimerEvent: {}
+[43.099651] (-) TimerEvent: {}
+[43.200058] (-) TimerEvent: {}
+[43.300531] (-) TimerEvent: {}
+[43.400840] (-) TimerEvent: {}
+[43.501181] (-) TimerEvent: {}
+[43.601527] (-) TimerEvent: {}
+[43.702003] (-) TimerEvent: {}
+[43.802405] (-) TimerEvent: {}
+[43.902955] (-) TimerEvent: {}
+[44.003301] (-) TimerEvent: {}
+[44.103668] (-) TimerEvent: {}
+[44.204079] (-) TimerEvent: {}
+[44.304464] (-) TimerEvent: {}
+[44.404772] (-) TimerEvent: {}
+[44.505235] (-) TimerEvent: {}
+[44.605809] (-) TimerEvent: {}
+[44.706456] (-) TimerEvent: {}
+[44.807184] (-) TimerEvent: {}
+[44.908532] (-) TimerEvent: {}
+[45.008918] (-) TimerEvent: {}
+[45.109472] (-) TimerEvent: {}
+[45.209991] (-) TimerEvent: {}
+[45.310381] (-) TimerEvent: {}
+[45.410750] (-) TimerEvent: {}
+[45.511128] (-) TimerEvent: {}
+[45.611413] (-) TimerEvent: {}
+[45.711820] (-) TimerEvent: {}
+[45.812250] (-) TimerEvent: {}
+[45.912737] (-) TimerEvent: {}
+[46.013191] (-) TimerEvent: {}
+[46.113484] (-) TimerEvent: {}
+[46.213885] (-) TimerEvent: {}
+[46.314326] (-) TimerEvent: {}
+[46.414684] (-) TimerEvent: {}
+[46.515035] (-) TimerEvent: {}
+[46.615391] (-) TimerEvent: {}
+[46.715820] (-) TimerEvent: {}
+[46.816224] (-) TimerEvent: {}
+[46.916506] (-) TimerEvent: {}
+[47.016875] (-) TimerEvent: {}
+[47.117165] (-) TimerEvent: {}
+[47.217520] (-) TimerEvent: {}
+[47.317814] (-) TimerEvent: {}
+[47.418171] (-) TimerEvent: {}
+[47.518491] (-) TimerEvent: {}
+[47.618780] (-) TimerEvent: {}
+[47.719082] (-) TimerEvent: {}
+[47.819469] (-) TimerEvent: {}
+[47.919918] (-) TimerEvent: {}
+[48.020372] (-) TimerEvent: {}
+[48.120925] (-) TimerEvent: {}
+[48.221280] (-) TimerEvent: {}
+[48.321661] (-) TimerEvent: {}
+[48.422016] (-) TimerEvent: {}
+[48.522438] (-) TimerEvent: {}
+[48.622791] (-) TimerEvent: {}
+[48.723308] (-) TimerEvent: {}
+[48.823663] (-) TimerEvent: {}
+[48.923999] (-) TimerEvent: {}
+[49.024364] (-) TimerEvent: {}
+[49.124738] (-) TimerEvent: {}
+[49.225100] (-) TimerEvent: {}
+[49.325467] (-) TimerEvent: {}
+[49.425946] (-) TimerEvent: {}
+[49.526339] (-) TimerEvent: {}
+[49.626729] (-) TimerEvent: {}
+[49.727139] (-) TimerEvent: {}
+[49.827664] (-) TimerEvent: {}
+[49.928069] (-) TimerEvent: {}
+[50.028669] (-) TimerEvent: {}
+[50.129220] (-) TimerEvent: {}
+[50.229839] (-) TimerEvent: {}
+[50.330339] (-) TimerEvent: {}
+[50.430973] (-) TimerEvent: {}
+[50.531459] (-) TimerEvent: {}
+[50.631884] (-) TimerEvent: {}
+[50.732233] (-) TimerEvent: {}
+[50.832645] (-) TimerEvent: {}
+[50.932999] (-) TimerEvent: {}
+[51.033338] (-) TimerEvent: {}
+[51.133691] (-) TimerEvent: {}
+[51.234110] (-) TimerEvent: {}
+[51.334526] (-) TimerEvent: {}
+[51.434948] (-) TimerEvent: {}
+[51.535437] (-) TimerEvent: {}
+[51.635924] (-) TimerEvent: {}
+[51.736446] (-) TimerEvent: {}
+[51.836909] (-) TimerEvent: {}
+[51.937390] (-) TimerEvent: {}
+[52.037791] (-) TimerEvent: {}
+[52.138178] (-) TimerEvent: {}
+[52.238629] (-) TimerEvent: {}
+[52.338989] (-) TimerEvent: {}
+[52.439345] (-) TimerEvent: {}
+[52.539695] (-) TimerEvent: {}
+[52.640022] (-) TimerEvent: {}
+[52.740322] (-) TimerEvent: {}
+[52.840689] (-) TimerEvent: {}
+[52.941122] (-) TimerEvent: {}
+[53.041557] (-) TimerEvent: {}
+[53.142025] (-) TimerEvent: {}
+[53.242461] (-) TimerEvent: {}
+[53.342825] (-) TimerEvent: {}
+[53.443277] (-) TimerEvent: {}
+[53.543737] (-) TimerEvent: {}
+[53.644194] (-) TimerEvent: {}
+[53.744623] (-) TimerEvent: {}
+[53.845052] (-) TimerEvent: {}
+[53.945511] (-) TimerEvent: {}
+[54.045930] (-) TimerEvent: {}
+[54.146193] (-) TimerEvent: {}
+[54.246521] (-) TimerEvent: {}
+[54.346950] (-) TimerEvent: {}
+[54.447329] (-) TimerEvent: {}
+[54.547854] (-) TimerEvent: {}
+[54.648247] (-) TimerEvent: {}
+[54.748624] (-) TimerEvent: {}
+[54.848982] (-) TimerEvent: {}
+[54.949660] (-) TimerEvent: {}
+[55.050441] (-) TimerEvent: {}
+[55.150925] (-) TimerEvent: {}
+[55.251686] (-) TimerEvent: {}
+[55.351973] (-) TimerEvent: {}
+[55.452388] (-) TimerEvent: {}
+[55.552774] (-) TimerEvent: {}
+[55.653052] (-) TimerEvent: {}
+[55.753406] (-) TimerEvent: {}
+[55.853672] (-) TimerEvent: {}
+[55.954037] (-) TimerEvent: {}
+[56.054412] (-) TimerEvent: {}
+[56.154948] (-) TimerEvent: {}
+[56.255514] (-) TimerEvent: {}
+[56.355973] (-) TimerEvent: {}
+[56.456384] (-) TimerEvent: {}
+[56.556854] (-) TimerEvent: {}
+[56.657259] (-) TimerEvent: {}
+[56.757715] (-) TimerEvent: {}
+[56.858211] (-) TimerEvent: {}
+[56.958569] (-) TimerEvent: {}
+[57.058976] (-) TimerEvent: {}
+[57.159371] (-) TimerEvent: {}
+[57.259814] (-) TimerEvent: {}
+[57.360269] (-) TimerEvent: {}
+[57.460760] (-) TimerEvent: {}
+[57.561281] (-) TimerEvent: {}
+[57.661730] (-) TimerEvent: {}
+[57.762191] (-) TimerEvent: {}
+[57.862678] (-) TimerEvent: {}
+[57.963158] (-) TimerEvent: {}
+[58.063662] (-) TimerEvent: {}
+[58.164115] (-) TimerEvent: {}
+[58.264485] (-) TimerEvent: {}
+[58.364916] (-) TimerEvent: {}
+[58.465262] (-) TimerEvent: {}
+[58.565672] (-) TimerEvent: {}
+[58.666084] (-) TimerEvent: {}
+[58.766602] (-) TimerEvent: {}
+[58.866947] (-) TimerEvent: {}
+[58.967243] (-) TimerEvent: {}
+[59.067547] (-) TimerEvent: {}
+[59.167918] (-) TimerEvent: {}
+[59.269665] (-) TimerEvent: {}
+[59.370002] (-) TimerEvent: {}
+[59.470362] (-) TimerEvent: {}
+[59.570864] (-) TimerEvent: {}
+[59.671383] (-) TimerEvent: {}
+[59.771770] (-) TimerEvent: {}
+[59.872296] (-) TimerEvent: {}
+[59.972807] (-) TimerEvent: {}
+[60.073128] (-) TimerEvent: {}
+[60.173480] (-) TimerEvent: {}
+[60.273852] (-) TimerEvent: {}
+[60.374251] (-) TimerEvent: {}
+[60.474564] (-) TimerEvent: {}
+[60.574950] (-) TimerEvent: {}
+[60.675438] (-) TimerEvent: {}
+[60.775826] (-) TimerEvent: {}
+[60.876247] (-) TimerEvent: {}
+[60.976713] (-) TimerEvent: {}
+[61.077169] (-) TimerEvent: {}
+[61.177710] (-) TimerEvent: {}
+[61.278119] (-) TimerEvent: {}
+[61.378574] (-) TimerEvent: {}
+[61.478921] (-) TimerEvent: {}
+[61.579343] (-) TimerEvent: {}
+[61.679715] (-) TimerEvent: {}
+[61.780178] (-) TimerEvent: {}
+[61.880581] (-) TimerEvent: {}
+[61.980937] (-) TimerEvent: {}
+[62.081298] (-) TimerEvent: {}
+[62.181642] (-) TimerEvent: {}
+[62.282093] (-) TimerEvent: {}
+[62.382395] (-) TimerEvent: {}
+[62.482853] (-) TimerEvent: {}
+[62.583231] (-) TimerEvent: {}
+[62.683807] (-) TimerEvent: {}
+[62.784195] (-) TimerEvent: {}
+[62.884517] (-) TimerEvent: {}
+[62.984869] (-) TimerEvent: {}
+[63.085276] (-) TimerEvent: {}
+[63.185720] (-) TimerEvent: {}
+[63.286194] (-) TimerEvent: {}
+[63.386709] (-) TimerEvent: {}
+[63.487044] (-) TimerEvent: {}
+[63.587399] (-) TimerEvent: {}
+[63.688041] (-) TimerEvent: {}
+[63.789229] (-) TimerEvent: {}
+[63.889660] (-) TimerEvent: {}
+[63.990414] (-) TimerEvent: {}
+[64.090851] (-) TimerEvent: {}
+[64.191371] (-) TimerEvent: {}
+[64.291889] (-) TimerEvent: {}
+[64.392339] (-) TimerEvent: {}
+[64.434146] (smartcar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcar_gazebo_plugin.so\x1b[0m\n'}
+[64.492466] (-) TimerEvent: {}
+[64.593398] (-) TimerEvent: {}
+[64.694704] (-) TimerEvent: {}
+[64.796618] (-) TimerEvent: {}
+[64.897294] (-) TimerEvent: {}
+[64.997711] (-) TimerEvent: {}
+[65.098066] (-) TimerEvent: {}
+[65.198464] (-) TimerEvent: {}
+[65.298825] (-) TimerEvent: {}
+[65.399324] (-) TimerEvent: {}
+[65.499849] (-) TimerEvent: {}
+[65.600268] (-) TimerEvent: {}
+[65.700860] (-) TimerEvent: {}
+[65.801466] (-) TimerEvent: {}
+[65.902265] (-) TimerEvent: {}
+[66.002950] (-) TimerEvent: {}
+[66.103475] (-) TimerEvent: {}
+[66.204018] (-) TimerEvent: {}
+[66.304474] (-) TimerEvent: {}
+[66.404926] (-) TimerEvent: {}
+[66.505450] (-) TimerEvent: {}
+[66.606036] (-) TimerEvent: {}
+[66.706649] (-) TimerEvent: {}
+[66.807100] (-) TimerEvent: {}
+[66.907440] (-) TimerEvent: {}
+[67.007833] (-) TimerEvent: {}
+[67.108164] (-) TimerEvent: {}
+[67.209681] (-) TimerEvent: {}
+[67.310159] (-) TimerEvent: {}
+[67.410637] (-) TimerEvent: {}
+[67.511875] (-) TimerEvent: {}
+[67.596211] (smartcar) StdoutLine: {'line': b'[100%] Built target car_gazebo_plugin\n'}
+[67.611956] (-) TimerEvent: {}
+[67.614979] (smartcar) CommandEnded: {'returncode': 0}
+[67.616305] (smartcar) JobProgress: {'identifier': 'smartcar', 'progress': 'install'}
+[67.616942] (smartcar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/emmanuel/smartcar/build/smartcar'], 'cwd': '/home/emmanuel/smartcar/build/smartcar', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emmanuel'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/emmanuel'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/emmanuel/smartcar'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1942'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2162'), ('BUNDLED_DEBUGPY_PATH', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '520093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emmanuel'), ('JOURNAL_STREAM', '8:48680'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'emmanuel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/emmanuel/smartcar:/home/emmanuel/smartcar:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/emmanuel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/emmanuel-LIFEBOOK-U747:@/tmp/.ICE-unix/2120,unix/emmanuel-LIFEBOOK-U747:/tmp/.ICE-unix/2120'), ('INVOCATION_ID', '9c217461bdfe4e4a9d36e7f02e22032e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/emmanuel/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9224e8e3aab4ca17.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/emmanuel/.config/Code/User/workspaceStorage/4ab6f1189e183b941ec5f9af8dc4cd7c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JEVQE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-45749014b9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SMARTCAR_DIR', '/home/emmanuel/smartcar'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/emmanuel/smartcar/build/smartcar'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble')]), 'shell': False}
+[67.633231] (smartcar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[67.633920] (smartcar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[67.635296] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/sensors.urdf.xacro\n'}
+[67.650329] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/smartcar.urdf.xacro\n'}
+[67.665687] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/__pycache__/smartcar_complete.launch.cpython-310.pyc\n'}
+[67.679767] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/gazebo.launch.py\n'}
+[67.695290] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/localization.launch.py\n'}
+[67.709382] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/nav2.launch.py\n'}
+[67.712116] (-) TimerEvent: {}
+[67.725867] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/smartcar_complete.launch.py\n'}
+[67.741345] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/nav2.rviz\n'}
+[67.755384] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/smartcar.rviz\n'}
+[67.769971] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown.world\n'}
+[67.783881] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.pgm\n'}
+[67.798741] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.yaml\n'}
+[67.812278] (-) TimerEvent: {}
+[67.812528] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/ekf.yaml\n'}
+[67.827096] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/nav2_params.yaml\n'}
+[67.841613] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//README.md\n'}
+[67.857419] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/libcar_gazebo_plugin.so\n'}
+[67.872489] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joint_state_publisher.py\n'}
+[67.886475] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joy_twist.py\n'}
+[67.901750] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//vehicle_interface.py\n'}
+[67.912430] (-) TimerEvent: {}
+[67.916351] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//wheel_odom.py\n'}
+[67.933121] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/package_run_dependencies/smartcar\n'}
+[67.947849] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/parent_prefix_path/smartcar\n'}
+[67.961726] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.sh\n'}
+[67.977774] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.dsv\n'}
+[67.991774] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.sh\n'}
+[68.007126] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.dsv\n'}
+[68.012576] (-) TimerEvent: {}
+[68.021422] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.bash\n'}
+[68.037608] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.sh\n'}
+[68.053219] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.zsh\n'}
+[68.066712] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.dsv\n'}
+[68.082167] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.dsv\n'}
+[68.096264] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/packages/smartcar\n'}
+[68.111720] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig.cmake\n'}
+[68.112681] (-) TimerEvent: {}
+[68.130158] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig-version.cmake\n'}
+[68.146262] (smartcar) StdoutLine: {'line': b'-- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.xml\n'}
+[68.162597] (smartcar) CommandEnded: {'returncode': 0}
+[68.187478] (smartcar) JobEnded: {'identifier': 'smartcar', 'rc': 0}
+[68.189417] (-) EventReactorShutdown: {}

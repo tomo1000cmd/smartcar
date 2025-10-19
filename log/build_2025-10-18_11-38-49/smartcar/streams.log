@@ -1,0 +1,175 @@
+[0.024s] Invoking command in '/home/emmanuel/smartcar/build/smartcar': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/emmanuel/smartcar/src/smartcar -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/smartcar/install/smartcar
+[0.130s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.244s] -- Detecting C compiler ABI info
+[0.361s] -- Detecting C compiler ABI info - done
+[0.382s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.383s] -- Detecting C compile features
+[0.384s] -- Detecting C compile features - done
+[0.391s] -- Detecting CXX compiler ABI info
+[0.555s] -- Detecting CXX compiler ABI info - done
+[0.573s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.574s] -- Detecting CXX compile features
+[0.574s] -- Detecting CXX compile features - done
+[0.579s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.851s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.959s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.005s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.098s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.108s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.126s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.255s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.260s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.418s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.463s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.537s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.552s] -- Looking for pthread.h
+[1.676s] -- Looking for pthread.h - found
+[1.676s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.812s] -- Found Threads: TRUE  
+[1.902s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[1.905s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.964s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.994s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.013s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.185s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[2.235s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[2.238s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[2.267s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.269s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.269s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.281s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[2.291s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.293s] -- Checking for module 'bullet>=2.82'
+[2.319s] --   Found bullet, version 3.05
+[2.506s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.603s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.638s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.685s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.708s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.718s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.730s] -- Searching for dependencies of ignition-math6
+[2.734s] -- Looking for OGRE...
+[2.735s] -- OGRE_PREFIX_WATCH changed.
+[2.744s] -- Checking for module 'OGRE'
+[2.769s] --   Found OGRE, version 1.9.0
+[2.835s] -- Found Ogre Ghadamon (1.9.0)
+[2.856s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.876s] -- Looking for OGRE_Paging...
+[2.892s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.892s] -- Looking for OGRE_Terrain...
+[2.906s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.906s] -- Looking for OGRE_Property...
+[2.926s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.926s] -- Looking for OGRE_RTShaderSystem...
+[2.943s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.944s] -- Looking for OGRE_Volume...
+[2.973s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.973s] -- Looking for OGRE_Overlay...
+[2.990s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.384s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.388s] -- Looking for ignition-transport8 -- found version 8.2.1
+[3.389s] -- Searching for dependencies of ignition-transport8
+[3.423s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[3.445s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.454s] -- Checking for module 'libzmq >= 4'
+[3.485s] --   Found libzmq , version 4.3.4
+[3.590s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.601s] -- Checking for module 'uuid'
+[3.628s] --   Found uuid, version 2.37.2
+[3.709s] -- Found UUID: TRUE  
+[3.714s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.717s] -- Searching for dependencies of ignition-msgs5
+[3.755s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.764s] -- Checking for module 'tinyxml2'
+[3.797s] --   Found tinyxml2, version 9.0.0
+[3.885s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.891s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.892s] -- Searching for dependencies of ignition-common3
+[3.892s] -- Looking for dlfcn.h - found
+[3.895s] -- Looking for libdl - found
+[3.898s] -- Found DL: TRUE  
+[3.928s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.929s] -- Searching for <ignition-common3> component [graphics]
+[3.941s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.941s] -- Searching for dependencies of ignition-common3-graphics
+[3.941s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.950s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.952s] -- Searching for dependencies of ignition-fuel_tools4
+[4.194s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[4.209s] -- Checking for module 'jsoncpp'
+[4.234s] --   Found jsoncpp, version 1.9.5
+[4.295s] -- Found JSONCPP: TRUE  
+[4.304s] -- Checking for module 'libzip'
+[4.329s] --   Found libzip, version 1.7.3
+[4.391s] -- Found ZIP: TRUE  
+[4.393s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.393s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.394s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.401s] -- Gazebo version: 11.10
+[4.401s] -- Checking for module 'tbb'
+[4.427s] --   Found tbb, version 2021.5.0
+[4.491s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[4.497s] -- Found ackermann_msgs: 2.0.2 (/home/emmanuel/smartcar/install/ackermann_msgs/share/ackermann_msgs/cmake)
+[4.519s] -- Found smartcar_msgs: 0.0.0 (/home/emmanuel/smartcar/install/smartcar_msgs/share/smartcar_msgs/cmake)
+[4.556s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.704s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.705s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/emmanuel/smartcar/src/smartcar/car_plugin>
+[4.705s] -- Configured cppcheck exclude dirs and/or files: 
+[4.706s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.707s] -- Added test 'lint_cmake' to check CMake code style
+[4.709s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.715s] -- Added test 'uncrustify' to check C / C++ code style
+[4.715s] -- Configured uncrustify additional arguments: 
+[4.716s] -- Added test 'xmllint' to check XML markup files
+[4.719s] -- Configuring done
+[4.773s] -- Generating done
+[4.781s] -- Build files have been written to: /home/emmanuel/smartcar/build/smartcar
+[4.814s] Invoked command in '/home/emmanuel/smartcar/build/smartcar' returned '0': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/emmanuel/smartcar/src/smartcar -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/emmanuel/smartcar/install/smartcar
+[4.818s] Invoking command in '/home/emmanuel/smartcar/build/smartcar': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/emmanuel/smartcar/build/smartcar -- -j4 -l4
+[4.921s] [ 50%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/car_plugin/car_gazebo_plugin.cpp.o[0m
+[45.726s] [100%] [32m[1mLinking CXX shared library libcar_gazebo_plugin.so[0m
+[48.888s] [100%] Built target car_gazebo_plugin
+[48.907s] Invoked command in '/home/emmanuel/smartcar/build/smartcar' returned '0': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/emmanuel/smartcar/build/smartcar -- -j4 -l4
+[48.910s] Invoking command in '/home/emmanuel/smartcar/build/smartcar': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/emmanuel/smartcar/build/smartcar
+[48.925s] -- Install configuration: ""
+[48.926s] -- Execute custom install script
+[48.927s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/sensors.urdf.xacro
+[48.942s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/smartcar.urdf.xacro
+[48.957s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/__pycache__/smartcar_complete.launch.cpython-310.pyc
+[48.972s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/gazebo.launch.py
+[48.987s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/localization.launch.py
+[49.001s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/nav2.launch.py
+[49.018s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/smartcar_complete.launch.py
+[49.033s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/nav2.rviz
+[49.047s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/smartcar.rviz
+[49.062s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown.world
+[49.076s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.pgm
+[49.091s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.yaml
+[49.104s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/ekf.yaml
+[49.119s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/nav2_params.yaml
+[49.133s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar//README.md
+[49.149s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/libcar_gazebo_plugin.so
+[49.164s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joint_state_publisher.py
+[49.178s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joy_twist.py
+[49.194s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//vehicle_interface.py
+[49.208s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//wheel_odom.py
+[49.225s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/package_run_dependencies/smartcar
+[49.240s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/parent_prefix_path/smartcar
+[49.254s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.sh
+[49.270s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.dsv
+[49.284s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.sh
+[49.299s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.dsv
+[49.313s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.bash
+[49.329s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.sh
+[49.345s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.zsh
+[49.359s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.dsv
+[49.374s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.dsv
+[49.388s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/packages/smartcar
+[49.404s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig.cmake
+[49.422s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig-version.cmake
+[49.438s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.xml
+[49.455s] Invoked command in '/home/emmanuel/smartcar/build/smartcar' returned '0': AMENT_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/emmanuel/smartcar/install/smartcar_msgs/local/lib/python3.10/dist-packages:/home/emmanuel/smartcar/install/ackermann_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/emmanuel/smartcar/build/smartcar

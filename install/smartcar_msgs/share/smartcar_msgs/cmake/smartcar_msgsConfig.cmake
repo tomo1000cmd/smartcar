@@ -1,0 +1,1 @@
+/home/emmanuel/smartcar/build/smartcar_msgs/ament_cmake_core/smartcar_msgsConfig.cmake

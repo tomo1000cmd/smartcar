@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-33359712ed0e0ee25926.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "smartcar_msgs__py",
+					"jsonFile" : "directory-smartcar_msgs__py-3ff6cfa732a27a036207.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/emmanuel/smartcar/build/smartcar_msgs/smartcar_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "smartcar_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_smartcar_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_smartcar_msgs_egg-ed072dcc03d9f3151a00.json",
+					"name" : "ament_cmake_python_build_smartcar_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_smartcar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_smartcar_msgs-d1dc9a3fa8fe1c222137.json",
+					"name" : "ament_cmake_python_symlink_smartcar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs-13947713d96a64134580.json",
+					"name" : "smartcar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__cpp-c81ba8319b2f1b633757.json",
+					"name" : "smartcar_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "smartcar_msgs__py::@f9427bd13e85343322ba",
+					"jsonFile" : "target-smartcar_msgs__py-b786eae81cdd9667219e.json",
+					"name" : "smartcar_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_generator_c-f22f625b9d19d416da55.json",
+					"name" : "smartcar_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_generator_py-0461680198777c238c9d.json",
+					"name" : "smartcar_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_c-2074e875d0d657fe7a82.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_c__pyext-09ea4661f99d8c3ea836.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_cpp-a4094824b4d9df366392.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_fastrtps_c-a48c904ea7fcd0124941.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_fastrtps_c__pyext-0e92b1038577116d915c.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_fastrtps_cpp-5bb0e91094d417cbac6c.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_introspection_c-0ff6885c122104dd709e.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_introspection_c__pyext-3d827fe2db0e3e14bc85.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs__rosidl_typesupport_introspection_cpp-bb8677f8049be19873ea.json",
+					"name" : "smartcar_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smartcar_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smartcar_msgs_uninstall-590976284a6d81f11103.json",
+					"name" : "smartcar_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c52464bee42132f8bcc5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/emmanuel/smartcar/build/smartcar_msgs",
+		"source" : "/home/emmanuel/smartcar/src/smartcar_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

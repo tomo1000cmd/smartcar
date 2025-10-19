@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<robot name="smartcar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include sensor definitions -->
+  <xacro:include filename="$(find smartcar)/urdf/sensors.urdf.xacro"/>
+
+  <!-- ===== Parameters from the assignment ===== -->
+  <xacro:property name="wheel_diameter" value="0.064"/>
+  <xacro:property name="wheel_radius"   value="${wheel_diameter/2.0}"/>
+  <xacro:property name="wheel_width"    value="0.025"/>
+  <xacro:property name="wheelbase_len"  value="0.257"/>   <!-- front axle to rear axle -->
+  <xacro:property name="wheelbase_wid"  value="0.17"/>    <!-- track width (left-right) -->
+  <xacro:property name="chassis_thick"  value="0.05"/>
+  
+  <!-- Mass properties -->
+  <xacro:property name="chassis_mass"   value="2.0"/>
+  <xacro:property name="wheel_mass"     value="0.2"/>
+
+  <!-- ===== Materials ===== -->
+  <material name="blue">
+    <color rgba="0.2 0.2 0.8 1"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.2 0.2 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="0.9 0.9 0.9 1"/>
+  </material>
+
+  <material name="gray">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+
+  <!-- ===== Inertial macro ===== -->
+  <xacro:macro name="inertial_box" params="mass x y z">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${mass}"/>
+      <!-- Box inertia formula: I = (1/12) * m * (h^2 + d^2) for each axis -->
+      <inertia ixx="${mass*(y*y+z*z)/12.0}"
+               iyy="${mass*(x*x+z*z)/12.0}"
+               izz="${mass*(x*x+y*y)/12.0}"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- ===== Base Links ===== -->
+  <link name="base_footprint"/>
+  
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base_link"/>
+    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ===== Chassis ===== -->
+  <link name="chassis_link">
+    <visual>
+      <origin xyz="0 0 ${chassis_thick/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${wheelbase_len} ${wheelbase_wid} ${chassis_thick}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${chassis_thick/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${wheelbase_len} ${wheelbase_wid} ${chassis_thick}"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="${chassis_mass}" x="${wheelbase_len}" y="${wheelbase_wid}" z="${chassis_thick}"/>
+  </link>
+
+  <joint name="base_to_chassis" type="fixed">
+    <parent link="base_link"/>
+    <child  link="chassis_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ===== Wheel macro ===== -->
+  <xacro:macro name="wheel" params="name">
+    <link name="${name}">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+      </collision>
+      <xacro:inertial_box mass="${wheel_mass}" x="${wheel_width}" y="${wheel_diameter}" z="${wheel_diameter}"/>
+    </link>
+  </xacro:macro>
+
+  <!-- ===== Rear Wheels (no steering) ===== -->
+  <xacro:wheel name="back_left_wheel"/>
+  <joint name="back_left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="back_left_wheel"/>
+    <origin xyz="${-wheelbase_len/2.0} ${wheelbase_wid/2.0} 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <xacro:wheel name="back_right_wheel"/>
+  <joint name="back_right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="back_right_wheel"/>
+    <origin xyz="${-wheelbase_len/2.0} ${-wheelbase_wid/2.0} 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ===== Front Wheels (with steering) ===== -->
+  <!-- CHANGED: knuckle -> steering_link to match Gazebo plugin -->
+  
+  <!-- Left front: steering knuckle + wheel -->
+  <link name="front_left_steering_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  
+  <joint name="front_left_wheel_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="front_left_steering_link"/>
+    <origin xyz="${wheelbase_len/2.0} ${wheelbase_wid/2.0} 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <xacro:wheel name="front_left_wheel"/>
+  <joint name="front_left_wheel_joint" type="continuous">
+    <parent link="front_left_steering_link"/>
+    <child  link="front_left_wheel"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- Right front: steering knuckle + wheel -->
+  <link name="front_right_steering_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  
+  <joint name="front_right_wheel_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="front_right_steering_link"/>
+    <origin xyz="${wheelbase_len/2.0} ${-wheelbase_wid/2.0} 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <xacro:wheel name="front_right_wheel"/>
+  <joint name="front_right_wheel_joint" type="continuous">
+    <parent link="front_right_steering_link"/>
+    <child  link="front_right_wheel"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- Joint State Publisher Plugin - explicitly control joint states from Gazebo -->
+  <gazebo>
+    <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <update_rate>30</update_rate>
+      <joint_name>front_left_wheel_joint</joint_name>
+      <joint_name>front_right_wheel_joint</joint_name>
+      <joint_name>back_left_wheel_joint</joint_name>
+      <joint_name>back_right_wheel_joint</joint_name>
+      <joint_name>front_left_wheel_steer_joint</joint_name>
+      <joint_name>front_right_wheel_steer_joint</joint_name>
+    </plugin>
+  </gazebo>
+
+  <!-- ===== Gazebo Materials for Proper Visualization ===== -->
+  <!-- Chassis Material -->
+  <gazebo reference="chassis_link">
+    <material>Gazebo/Blue</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <!-- Wheel Materials -->
+  <gazebo reference="back_left_wheel">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="back_right_wheel">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="front_left_wheel">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="front_right_wheel">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <!-- Steering Links -->
+  <gazebo reference="front_left_steering_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="front_right_steering_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <!-- Car Control Plugin -->
+  <gazebo>
+    <plugin name="car_gazebo_plugin" filename="libcar_gazebo_plugin.so">
+      <robotNamespace>smart_car</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <!-- Add sensors to the robot -->
+  <xacro:smartcar_imu_sensor parent_link="chassis_link" wheelbase_length="${wheelbase_len}"/>
+  <xacro:smartcar_lidar_sensor parent_link="chassis_link" wheelbase_length="${wheelbase_len}"/>
+
+</robot>

@@ -1,0 +1,1 @@
+/home/emmanuel/smartcar/build/smartcar/ament_cmake_core/smartcarConfig-version.cmake

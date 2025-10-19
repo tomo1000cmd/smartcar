@@ -1,0 +1,11 @@
+source;share/smartcar/hook/cmake_prefix_path.ps1
+source;share/smartcar/hook/cmake_prefix_path.dsv
+source;share/smartcar/hook/cmake_prefix_path.sh
+source;share/smartcar/hook/ld_library_path_lib.ps1
+source;share/smartcar/hook/ld_library_path_lib.dsv
+source;share/smartcar/hook/ld_library_path_lib.sh
+source;share/smartcar/local_setup.bash
+source;share/smartcar/local_setup.dsv
+source;share/smartcar/local_setup.ps1
+source;share/smartcar/local_setup.sh
+source;share/smartcar/local_setup.zsh

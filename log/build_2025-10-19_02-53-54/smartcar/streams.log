@@ -1,0 +1,43 @@
+[0.170s] Invoking command in '/home/emmanuel/smartcar/build/smartcar': CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/home/emmanuel/smartcar/install/smartcar:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/home/emmanuel/smartcar/install/smartcar/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/emmanuel/smartcar/build/smartcar -- -j4 -l4
+[1.136s] Consolidate compiler generated dependencies of target car_gazebo_plugin
+[1.323s] [100%] Built target car_gazebo_plugin
+[1.362s] Invoked command in '/home/emmanuel/smartcar/build/smartcar' returned '0': CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/home/emmanuel/smartcar/install/smartcar:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/home/emmanuel/smartcar/install/smartcar/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/emmanuel/smartcar/build/smartcar -- -j4 -l4
+[1.394s] Invoking command in '/home/emmanuel/smartcar/build/smartcar': CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/home/emmanuel/smartcar/install/smartcar:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/home/emmanuel/smartcar/install/smartcar/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/emmanuel/smartcar/build/smartcar
+[1.489s] -- Install configuration: ""
+[1.508s] -- Execute custom install script
+[1.517s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/sensors.urdf.xacro
+[1.520s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//urdf/smartcar.urdf.xacro
+[1.525s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/__pycache__/smartcar_complete.launch.cpython-310.pyc
+[1.529s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/gazebo.launch.py
+[1.530s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/localization.launch.py
+[1.534s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/nav2.launch.py
+[1.534s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//launch/smartcar_complete.launch.py
+[1.537s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/nav2.rviz
+[1.540s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//rviz/smartcar.rviz
+[1.545s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown.world
+[1.546s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.pgm
+[1.549s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//maps/smalltown_world.yaml
+[1.550s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/ekf.yaml
+[1.551s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//config/nav2_params.yaml
+[1.552s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar//README.md
+[1.554s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/lib/libcar_gazebo_plugin.so
+[1.559s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joint_state_publisher.py
+[1.560s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//joy_twist.py
+[1.561s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//vehicle_interface.py
+[1.561s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/lib/smartcar//wheel_odom.py
+[1.563s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/package_run_dependencies/smartcar
+[1.564s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/parent_prefix_path/smartcar
+[1.566s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.sh
+[1.567s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/ament_prefix_path.dsv
+[1.568s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.sh
+[1.570s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/environment/path.dsv
+[1.572s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.bash
+[1.573s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.sh
+[1.573s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.zsh
+[1.576s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/local_setup.dsv
+[1.576s] -- Symlinking: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.dsv
+[1.604s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/ament_index/resource_index/packages/smartcar
+[1.604s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig.cmake
+[1.604s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/cmake/smartcarConfig-version.cmake
+[1.605s] -- Up-to-date symlink: /home/emmanuel/smartcar/install/smartcar/share/smartcar/package.xml
+[1.692s] Invoked command in '/home/emmanuel/smartcar/build/smartcar' returned '0': CMAKE_PREFIX_PATH=/home/emmanuel/smartcar/install/smartcar_msgs:/home/emmanuel/smartcar/install/ackermann_msgs:/home/emmanuel/smartcar/install/smartcar:/opt/ros/humble LD_LIBRARY_PATH=/home/emmanuel/smartcar/install/smartcar_msgs/lib:/home/emmanuel/smartcar/install/ackermann_msgs/lib:/home/emmanuel/smartcar/install/smartcar/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/emmanuel/smartcar/build/smartcar

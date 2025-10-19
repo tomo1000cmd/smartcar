@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="smartcar">
+
+  <!-- Sensor Configuration Parameters -->
+  <xacro:arg name="enable_imu" default="true"/>
+  <xacro:arg name="enable_lidar" default="true"/>
+  <xacro:arg name="imu_update_rate" default="100.0"/>
+  <xacro:arg name="lidar_update_rate" default="12.0"/>
+  <xacro:arg name="lidar_samples" default="360"/>
+  <xacro:arg name="lidar_max_range" default="10.0"/>
+
+  <!-- IMU Sensor Configuration -->
+  <xacro:macro name="smartcar_imu_sensor" params="parent_link wheelbase_length:=${wheelbase_length}">
+    <xacro:if value="$(arg enable_imu)">
+      <!-- IMU Sensor Link -->
+      <link name="imu_link">
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.04 0.02 0.02"/>
+          </geometry>
+          <material name="white"/>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.04 0.02 0.02"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <mass value="0.1"/>
+          <origin xyz="0 0 0"/>
+          <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+        </inertial>
+      </link>
+
+      <!-- IMU positioned at center of robot -->
+      <joint name="imu_joint" type="fixed">
+        <parent link="${parent_link}"/>
+        <child link="imu_link"/>
+        <origin xyz="${wheelbase_length / 2} 0 0.035" rpy="0 0 0"/>
+      </joint>
+
+      <!-- Gazebo Classic IMU Sensor Plugin -->
+      <gazebo reference="imu_link">
+        <sensor name="imu_sensor" type="imu">
+          <update_rate>$(arg imu_update_rate)</update_rate>
+          <always_on>true</always_on>
+          <visualize>false</visualize>
+          <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+            <topicName>imu/data</topicName>
+            <bodyName>imu_link</bodyName>
+            <updateRateHZ>$(arg imu_update_rate)</updateRateHZ>
+            <gaussianNoise>0.0</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+            <frameName>imu_link</frameName>
+          </plugin>
+        </sensor>
+      </gazebo>
+    </xacro:if>
+  </xacro:macro>
+
+  <!-- LIDAR Sensor Configuration -->
+  <xacro:macro name="smartcar_lidar_sensor" params="parent_link wheelbase_length:=${wheelbase_length}">
+    <xacro:if value="$(arg enable_lidar)">
+      <!-- LIDAR Sensor Link -->
+      <link name="sllidar_base_link">
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <cylinder radius="0.04" length="0.05"/>
+          </geometry>
+          <material name="black"/>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <cylinder radius="0.04" length="0.05"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <mass value="0.2"/>
+          <origin xyz="0 0 0"/>
+          <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+        </inertial>
+      </link>
+
+      <!-- LIDAR positioned between front wheels at center with elevation -->
+      <joint name="lidar_joint" type="fixed">
+        <parent link="${parent_link}"/>
+        <child link="sllidar_base_link"/>
+        <origin xyz="${wheelbase_length / 2} 0 0.08" rpy="0 0 0"/>
+      </joint>
+
+      <!-- Gazebo Classic LIDAR Sensor Plugin -->
+      <gazebo reference="sllidar_base_link">
+        <sensor type="ray" name="lidar_sensor">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>true</visualize>
+          <update_rate>$(arg lidar_update_rate)</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>$(arg lidar_samples)</samples>
+                <resolution>1</resolution>
+                <min_angle>-3.14159</min_angle>
+                <max_angle>3.14159</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.12</min>
+              <max>$(arg lidar_max_range)</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name="gazebo_ros_ray_sensor" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+              <remapping>~/out:=scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>sllidar_base_link</frame_name>
+          </plugin>
+          <always_on>true</always_on>
+        </sensor>
+      </gazebo>
+    </xacro:if>
+  </xacro:macro>
+
+</robot>
