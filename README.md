@@ -40,6 +40,7 @@ The system follows ROS2 best practices and REP-105 coordinate frame conventions.
 - ✅ Extended Kalman Filter (EKF) for sensor fusion
 - ✅ Nav2 integration for autonomous navigation
 - ✅ RViz2 visualization and control interfaces
+- ✅ SLAM mapping for robot navigation
 
 ### Robot Specifications
 - **Wheel diameter**: 0.064m
