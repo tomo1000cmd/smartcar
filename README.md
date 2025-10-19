@@ -258,6 +258,9 @@ ros2 launch smartcar localization.launch.py
 
 # Navigation stack
 ros2 launch smartcar nav2.launch.py map:=smalltown_world.yaml
+
+#SLAM simulation
+ros2 launch smartcar smartcar_complete.launch.py slam:=true
 ```
 
 ### RViz2 Interface
