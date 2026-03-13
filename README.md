@@ -1,6 +1,6 @@
 # SmartCAR ROS2 Autonomous Navigation System
 ### SmartCAR Autonomous Navigation Demo
-
+![model](https://github.com/tomo1000cmd/smartcar/blob/main/smartcarscreenshot.png?raw=true)
 <video width="720" controls>
   <source src="https://github.com/tomo1000cmd/smartcar/raw/refs/heads/main/VIDEO-2026-03-13-11-30-30.mp4">
   Your browser does not support the video tag.
