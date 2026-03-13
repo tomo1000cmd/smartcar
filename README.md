@@ -1,4 +1,10 @@
 # SmartCAR ROS2 Autonomous Navigation System
+### SmartCAR Autonomous Navigation Demo
+
+<video width="720" controls>
+  <source src="https://github.com/tomo1000cmd/smartcar/raw/refs/heads/main/VIDEO-2026-03-13-11-30-30.mp4">
+  Your browser does not support the video tag.
+</video>
 
 A comprehensive ROS2-based autonomous navigation system for the SmartCAR robot, featuring Ackermann steering, sensor integration, localization, and navigation capabilities. This project implements a complete autonomous vehicle simulation and control system using ROS2 Humble, Gazebo, and Nav2.
 
